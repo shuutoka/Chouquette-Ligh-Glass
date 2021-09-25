@@ -1,0 +1,139 @@
+/**
+ * @name Chouquette Light Glass
+ * @author Shuutoka
+ * @description Customize your discord background ! (line 20) 
+ * @version 1
+ */
+
+/*Well, I confess, I'm not very good at writing or theme discord. So, for the spelling mistakes in the comments... sorry... and if I forgot to modify a place in the discord, let me know ! 
+And yes I am a beginner coder, and I learned a lot by looking at the code of Akame No Kill, Clear Vision and BlurpleRecolor. 
+Kisses, Shuutoka#2047
+---------------------------------------------------------------------
+HOW TO MODIFY THIS THEME 
+
+I have commented on everything. So you can scroll and change the colors, transparency, add your own code etc ....
+ otherwise to change the background image, you need the link of an image
+  (not the website but the image, so the address must end with .png or .gif for example) that you will paste on line 20 instead of the default image. 
+  That's it! :)
+----------------------------------------------------------------------
+and excuse me I am a French dyslexic
+*/
+
+
+
+#app-mount .app-2rEoOp {
+  background-color: black;
+  background-size: cover; /* if you want to resize or make a mosaic of your image enter the size like this : 1920px 1080px */
+  background-image: url(https://images.alphacoders.com/697/thumb-1920-697310.jpg); /*past the URL of your image, you can use a discord link or an imgur... or what ever you want.*/
+}
+.layers-3iHuyZ {/*don't delete this line*/
+  background-color: rgba(0, 0, 0, 0.616); /*you CAN delete this one if you want or change the color of the filter, if it's ugly it's your fault*/
+}/*don't delete this line*/
+
+.standardSidebarView-3F1I7i, /*don't delete this */
+.sidebarRegionScroller-3MXcoP, /* this modify the side bar you can delet/change it if you want*/
+.contentRegion-3nDuYy,/*this is for the main region, you can delet/modify it but it can look strange*/
+.bg-h5JY_x, /*this is the background, if you delete it, you will get a true black background*/
+.theme-dark .layer-3QrUeG,
+.contentRegionScroller-26nc1e, /* oh hey, this code isn't so complicated right ?*/
+.scroller-305q3I { /*don't delete this line*/
+  background-color: transparent;/*don't delete this line*/
+}/*don't delete this line*/
+
+
+.guildSeparator-33mFX6, .scroller-1Bvpku, .wrapper-3NnKdC { /* allow you to see your image*/
+  background: none;
+}
+
+/*you will see your image trough the text bar, delet it to recover the legacy one*/
+.scrollableContainer-2NUZem {
+  background-color: transparent;
+}
+
+.channelTextArea-rNsIhG {
+  background-color: rgba(0, 0, 0, .3); /*text bar color*/
+}
+
+.layers-3iHuyZ {
+  background-color: rgba(0,0,0,.7); /* filter color ... you can try ultra pink, but it's gonna be ugly.. and pink lul */
+}
+
+.searchBar-3dMhjb {
+  border-radius: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, .3); /*searchBar*/
+}
+
+.search-2oPWTC .DraftEditor-root .public-DraftEditorPlaceholder-root {
+  color: rgba(255, 255, 255, 0.726); /* search inscription (top right)*/
+}
+
+.container-3w7J-x, .sidebar-2K8pFh, .panels-j1Uci_, .chat-3bRxxu, .messages-3amgkR {
+  background-color: transparent; /* main space of discord, don't delete this line*/
+}
+
+.theme-dark .container-1r6BKw {
+  color: white;
+  background-color: transparent; /* channel name& info*/
+}
+
+
+.childWrapper-anI2G9 {
+  background-color: transparent; /* in the server bar : discord button and imageless servers will be transparent, you can delete it */
+  color: white;
+}
+
+.children-19S4PO:after, .theme-dark .form-2fGMdU:before, .theme-dark .option-96V44q.selected-rZcOL-:after,
+.theme-dark .option-96V44q:after, .divider-3FBTu8 {
+  background: none; /* if you delete, the search bar will be ugly... iguess */
+}
+
+
+.theme-dark .container-3ayLPN { /* search bar color option */
+  background-color: #000000dc;
+}
+
+.theme-dark .resultsGroup-r_nuzN .header-2N-gMV, .theme-dark .resultsGroup-r_nuzN .plusIcon-v0BTrL, .theme-dark .resultsGroup-r_nuzN .searchClearHistory-2cSSMO, .theme-dark .resultsGroup-r_nuzN .searchLearnMore-3SQUAj a,
+.theme-dark .searchOption-zQ-1l6 .filter-3Y_im-, .theme-dark .option-96V44q .answer-1n6g43 {
+  color: white; /*search bar result color*/
+}
+
+
+.theme-dark .option-96V44q .filter-3Y_im- { /*search bar option color*/
+  color: #8f8f8f;
+}
+
+
+.theme-dark .focused-2bY0OD, .theme-dark .option-96V44q.selected-rZcOL- { /*hover in the search bar*/
+  background-color: rgba(216, 216, 221, 0.2);
+}
+
+.members-1998pB {
+  background-color: rgba(0,0,0,.3);/* don't delete this... it's gonna be ugly*/
+}
+
+.members-1998pB>div {
+  background-color: transparent; /* don't delete this... it's gonna be ugly*/
+}
+
+@.body-bvcIjN, .activity-2Gy-9S, .member-3-YXUe, .clickable-1JJAn8.container-2Pjhx-:hover, .clickable-1JJAn8.container-2Pjhx-:hover .muted-3mU76i {
+  color: rgb(228, 228, 228); /*change the global color of people. activate it by delete the "@". you can also edit it if you want */
+}
+
+.contentWrapper-SvZHNd,
+.emojiPicker-3PwZFl {
+  border-radius: 0 0 7px 7px;
+  background:  rgba(0, 0, 0, 0.281); /*adjust the color for the emote box*/
+}
+
+.diversityEmojiItem-L6_IXw:hover {  /* the zone were the server name is displayed*/
+  background-color: rgba(0, 0, 0, 0.288);
+}
+
+.wrapper-1-Fsb8 {
+  background-color: rgba(0, 0, 0, 0.048); /*wrapper*/
+}
+
+.inspector-S2gM3e, .wrapper-2Gsate { /*emoji inspector*/
+  background: none;
+}

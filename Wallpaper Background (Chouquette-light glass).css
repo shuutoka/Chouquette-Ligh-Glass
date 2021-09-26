@@ -1,15 +1,16 @@
 /**
- * @name Chouquette-Light-Glass
+ * @name Chouquette Light Glass
  * @author Shuutoka
- * @description Customize your discord background ! (line 20) 
- * @version 1
+ * @description A simple and cutomizable theme. Allow you to put an image in background. preserve discord shape.
+ * @version 1.2
  */
 
-/*Well, I confess, I'm not very good at writing or theme discord. So, for the spelling mistakes in the comments... sorry... and if I forgot to modify a place in the discord, let me know !
+
+/*Well, I confess, I'm not very good at writing or theme discord. So, for the spelling mistakes in the comments... sorry... and if I forgot to modify a place in the discord, let me know ! 
 And yes I am a beginner coder, and I learned a lot by looking at the code of Akame No Kill, Clear Vision and BlurpleRecolor. 
 Kisses, Shuutoka#2047
 ---------------------------------------------------------------------
-HOW TO MODIFY THIS THEME
+HOW TO MODIFY THIS THEME 
 
 I have commented on everything. So you can scroll and change the colors, transparency, add your own code etc ....
  otherwise to change the background image, you need the link of an image
@@ -24,7 +25,7 @@ and excuse me I am a French dyslexic
 #app-mount .app-2rEoOp {
   background-color: black;
   background-size: cover; /* if you want to resize or make a mosaic of your image enter the size like this : 1920px 1080px */
-  background-image: url(https://images.alphacoders.com/697/thumb-1920-697310.jpg); /*past the URL of your image, you can use a discord link or an imgur... or what ever you want.*/
+  background-image: url(https://cdn.discordapp.com/attachments/616617359041495040/889529770189144114/honkai-impact-3rd-herrscher-of-flamescion-live-2d-wallpaper-live-2d-herrscher-of-flamescion.gif); /*past the URL of your image, you can use a discord link or an imgur... or what ever you want.*/
 }
 .layers-3iHuyZ {/*don't delete this line*/
   background-color: rgba(0, 0, 0, 0.616); /*you CAN delete this one if you want or change the color of the filter, if it's ugly it's your fault*/
@@ -54,10 +55,6 @@ and excuse me I am a French dyslexic
   background-color: rgba(0, 0, 0, .3); /*text bar color*/
 }
 
-.layers-3iHuyZ {
-  background-color: rgba(0,0,0,.7); /* filter color ... you can try ultra pink, but it's gonna be ugly.. and pink lul */
-}
-
 .searchBar-3dMhjb {
   border-radius: 0;
   color: white;
@@ -85,7 +82,7 @@ and excuse me I am a French dyslexic
 
 .children-19S4PO:after, .theme-dark .form-2fGMdU:before, .theme-dark .option-96V44q.selected-rZcOL-:after,
 .theme-dark .option-96V44q:after, .divider-3FBTu8 {
-  background: none; /* if you delete, the search bar will be ugly... iguess */
+  background: none; /* if you delete, the search bar will be ugly... i guess */
 }
 
 
@@ -123,7 +120,7 @@ and excuse me I am a French dyslexic
 .contentWrapper-SvZHNd,
 .emojiPicker-3PwZFl {
   border-radius: 0 0 7px 7px;
-  background:  rgba(0, 0, 0, 0.281); /*adjust the color for the emote box*/
+  background:  rgba(0, 0, 0, 0.719); /*adjust the color for the emote box*/
 }
 
 .diversityEmojiItem-L6_IXw:hover {  /* the zone were the server name is displayed*/
@@ -137,3 +134,61 @@ and excuse me I am a French dyslexic
 .inspector-S2gM3e, .wrapper-2Gsate { /*emoji inspector*/
   background: none;
 }
+ 
+.topPill-30KHOu .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ, /* top buttons color in the "friends menu"*/
+.theme-dark #bd-settings-sidebar .ui-tab-bar-item.selected,
+.theme-dark .header-2-Imhb .tabBar-1kuXvJ .tab-ck0077.active-1MbGPa {
+  background-color: #5c5859;
+}
+
+.privateChannels-1nO12o, .scroller-1JbKMe, .theme-dark .container-1D34oG,
+.nowPlayingColumn-2sl4cE, .scroller-1IIF0A, .scroller-2XE8rp, .applicationStore-1pNvnv,
+.scroller-9moviB {
+  background: none;  /* background in the "friend menu"*/
+}
+
+.wrapper-3D2qGf {
+  background-color: rgba(0, 0, 0, .23);
+} /* online friends card, you can edit it */
+
+
+.container-lRFx4q {
+  background-color: rgba(0, 0, 0, .23);
+} /* container for online friend you can edit it if you want*/
+
+.theme-dark .inset-3sAvek, .section-2gLsgF, .header-2mZ9Ov, .titleContainer-2CXtJo {
+  background: none;
+} /* activity of your friends (like "Play on Xbox") in the container, you can edit/delete it if you want*/
+
+.actionButton-uPB8Fs { /*buttons shape and color. 0xp = square, 20 = round*/
+  border-radius: 14px;
+  color: white;
+  background-color: rgba(37, 36, 36, 0.6);
+}
+
+.actionButton-uPB8Fs:hover, .actionButton-uPB8Fs.highlight-Lf97TE {
+  background-color: #5a5a5a;
+} /* Hover action buttons color */
+
+.theme-dark .attachment-33OFj0, .embedFull-2tM8--, .wrapper-35wsBm {
+  border-color: transparent;
+  background-color: rgba(0,0,0,0.3);
+} /* attachement and link, you can edit the color*/
+
+.theme-dark .autocomplete-1vrmpx, .theme-dark .uploadModal-2ifh8j {
+  background: rgba(0, 0, 0, 0.842);
+} /*emoji selector in the text bar*/
+
+.theme-dark .selected-1Tbx07 {
+  background-color: #3b3834e5;
+} /* hover in the emoji selector of the text bar*/
+
+/*jjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+jjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+jjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+jjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+jjjjjjjjjjjjjjjjjjjjjjjjjjjj <-- this is a check point for me, dont worry*/
+
+

@@ -190,6 +190,29 @@ and excuse me I am a French dyslexic
   background-color: rgba(82, 78, 78, 0.671); /*reaction color and shape*/
 }
 
+
+.wrapper-2aW0bm {
+  background-color: #080808cc;
+  box-shadow: none;
+} /*reaction reply and more box*/
+
+.reaction-1hd86g {
+  border-radius: 17px;
+  background-color: rgba(102, 99, 100, 0.6);
+} /*reaction shape and color*/
+
+.modeUnread-1qO3K1 .icon-1DeIlz, .modeUnread-1qO3K1:hover .icon-1DeIlz,
+.modeUnread-1qO3K1 .name-23GUGE, .modeUnread-1qO3K1:hover .name-23GUGE {
+  color: #ffffffd7;
+} /*unread channel*/
+
+.standardSidebarView-3F1I7i a, .imageDetails-1t6Zms a, .primary-jw0I4K a, .footer-3rDWdC a, .lookLink-9FtZy-.colorLink-35jkBc,
+.bda-slist .bda-footer a, .markup-2BOw-j a, .welcomeMessage-ULm0mo a, .theme-dark .filenameLinkWrapper-1-14c5, .theme-dark .filenameLinkWrapper-1-14c5 a,
+.topic-TCb_qw a, .emptyStateCTA-veJ2Cu a, .helpText-h3r3wC a, .colorStandard-2KCXvj a,
+.editChannelButton-1dYN-G, .fakeLink-26oLcc, .button-18p_f6,
+.footerText-2a7NxZ a {
+  color: rgba(51, 139, 255, 0.74);
+} /*link color*/
 /*jjjjjjjjjjjjjjjjjjjjjjjjjjjjj
 jjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
 jjjjjjjjjjjjjjjjjjjjjjjjjjjjjj

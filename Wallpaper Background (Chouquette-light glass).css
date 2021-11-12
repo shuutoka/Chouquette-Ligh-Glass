@@ -16,7 +16,7 @@ HOW TO MODIFY THIS THEME
 
 I have commented on everything. So you can scroll and change the colors, transparency, add your own code etc ....
  otherwise to change the background image, you need the link of an image
-  (not the website but the image, so the address must end with .png or .gif for example) that you will paste on line 20 instead of the default image. 
+  (not the website but the image, so the address must end with .png or .gif for example) that you will paste on line 30 instead of the default image. 
   That's it! :)
 ----------------------------------------------------------------------
 and excuse me I am a French dyslexic
@@ -113,6 +113,10 @@ and excuse me I am a French dyslexic
 
 .members-1998pB>div {
   background-color: transparent; /* don't delete this... it's gonna be ugly*/
+}
+
+.container-2wlB3z {
+  background-color: transparent;
 }
 
 @.body-bvcIjN, .activity-2Gy-9S, .member-3-YXUe, .clickable-1JJAn8.container-2Pjhx-:hover, .clickable-1JJAn8.container-2Pjhx-:hover .muted-3mU76i {
@@ -221,4 +225,4 @@ jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
 jjjjjjjjjjjjjjjjjjjjjjjjjjjjj
 jjjjjjjjjjjjjjjjjjjjjjjjjjjj <-- this is a check point for me, dont worry*/
 
-
+}

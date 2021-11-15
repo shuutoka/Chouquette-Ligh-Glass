@@ -1,8 +1,9 @@
+
 /**
  * @name Chouquette Light Glass
  * @author Shuutoka
  * @description A simple and cutomizable theme. Allow you to put an image in background. preserve discord shape.
- * @version 1.2.0.2
+ * @version 1.3
  * @source https://github.com/shuutoka/Chouquette-Ligh-Glass
  * @website https://utip.io/shuutoka
  */
@@ -16,19 +17,39 @@ HOW TO MODIFY THIS THEME
 
 I have commented on everything. So you can scroll and change the colors, transparency, add your own code etc ....
  otherwise to change the background image, you need the link of an image
-  (not the website but the image, so the address must end with .png or .gif for example) that you will paste on line 30 instead of the default image. 
+  (not the website but the image, so the address must end with .png or .gif for example) that you will paste on line 27 instead of the default image. 
   That's it! :)
 ----------------------------------------------------------------------
 and excuse me I am a French dyslexic
 */
 
-
-
-#app-mount .app-2rEoOp {
-  background-color: black;
-  background-size: cover; /* if you want to resize or make a mosaic of your image enter the size like this : 1920px 1080px */
-  background-image: url(https://cdn.discordapp.com/attachments/616617359041495040/889529770189144114/honkai-impact-3rd-herrscher-of-flamescion-live-2d-wallpaper-live-2d-herrscher-of-flamescion.gif); /*past the URL of your image, you can use a discord link or an imgur... or what ever you want.*/
+:root {
+    --background-image: url(https://cdn.discordapp.com/attachments/854886045707796480/907274752526278716/Honkai-Impact-3Rd-Herrscher-Of-Flamescion-Live-2D-Wallpaper-Live-2D-Herrscher-Of-Flamescion-1.gif);; /*Changes the background image*/
+    --bg-blur: 0px; /*Amount of blur on the background*/
 }
+
+/*Modifies the background*/
+#app-mount::before {
+    content: "";
+    background: var(--background-image);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; /* position*/
+    width: 100%;
+    filter: blur(var(--bg-blur));
+    opacity: var(--bg-opacity);
+}
+/*Transparent panels*/
+.appMount-3lHmkl, body {
+    background-color: var(--bg-main-panels);
+}
+.app-2rEoOp { /*Discord Background*/
+    background-color: var(--bg-main-panels);
+}
+
 .layers-3iHuyZ {/*don't delete this line*/
   background-color: rgba(0, 0, 0, 0.616); /*you CAN delete this one if you want or change the color of the filter, if it's ugly it's your fault*/
 }/*don't delete this line*/
@@ -119,7 +140,7 @@ and excuse me I am a French dyslexic
   background-color: transparent;
 }
 
-@.body-bvcIjN, .activity-2Gy-9S, .member-3-YXUe, .clickable-1JJAn8.container-2Pjhx-:hover, .clickable-1JJAn8.container-2Pjhx-:hover .muted-3mU76i {
+.body-bvcIjN, .activity-2Gy-9S, .member-3-YXUe, .clickable-1JJAn8.container-2Pjhx-:hover, .clickable-1JJAn8.container-2Pjhx-:hover .muted-3mU76i {
   color: rgb(228, 228, 228); /*change the global color of people. activate it by delete the "@". you can also edit it if you want */
 }
 
@@ -210,13 +231,27 @@ and excuse me I am a French dyslexic
   color: #ffffffd7;
 } /*unread channel*/
 
+/*sidebar update*/
 .standardSidebarView-3F1I7i a, .imageDetails-1t6Zms a, .primary-jw0I4K a, .footer-3rDWdC a, .lookLink-9FtZy-.colorLink-35jkBc,
 .bda-slist .bda-footer a, .markup-2BOw-j a, .welcomeMessage-ULm0mo a, .theme-dark .filenameLinkWrapper-1-14c5, .theme-dark .filenameLinkWrapper-1-14c5 a,
 .topic-TCb_qw a, .emptyStateCTA-veJ2Cu a, .helpText-h3r3wC a, .colorStandard-2KCXvj a,
 .editChannelButton-1dYN-G, .fakeLink-26oLcc, .button-18p_f6,
 .footerText-2a7NxZ a {
   color: rgba(51, 139, 255, 0.74);
-} /*link color*/
+} 
+/* TITLEBAR */
+.typeWindows-1za-n7 > .wordmark-2iDDfm:before {
+  content: "Light Chouquette Glass";
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 17px;
+  text-shadow: 0 0 3px #000;
+}
+.typeWindows-1za-n7 > .wordmark-2iDDfm > svg {
+  filter: drop-shadow(0 0 5px var(--main-color));
+  margin-top: 0px;
+}
+
+
 /*jjjjjjjjjjjjjjjjjjjjjjjjjjjjj
 jjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
 jjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
@@ -225,4 +260,4 @@ jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
 jjjjjjjjjjjjjjjjjjjjjjjjjjjjj
 jjjjjjjjjjjjjjjjjjjjjjjjjjjj <-- this is a check point for me, dont worry*/
 
-}
+
